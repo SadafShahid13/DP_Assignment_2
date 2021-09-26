@@ -31,8 +31,10 @@ public class Folder implements Component
     public void doubleClick() 
     {
         System.out.println("\n" + name + " " + type + " is opened.\nContents:");
-        for(int i=0; i<componentsList.size(); i++){
+        for(int i=0; i<componentsList.size(); i++)
+        {
             componentsList.get(i).singleClick();
         }
+        System.out.println(name + " " + type + " is closed.\n");
     }
 }
